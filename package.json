@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack -p --config webpack-worker.config.js && webpack-dev-server --hot --inline --colors --progress",
-    "build": "webpack -p --config webpack-worker.config.js && webpack -p --colors && webpack --config webpack-worker.config.js"
+    "build": "webpack -p --config webpack-worker.config.js && webpack -p --colors && webpack --config webpack-worker.config.js",
+    "heroku-postbuild": "webpack -p"
   },
   "author": "Isaac Suazo",
   "license": "ISC",
